@@ -1,0 +1,15 @@
+select * from emp where deptno=10;
+
+select rownum,empno, ename from emp where rownum<=17
+MINUS 
+select rownum,empno,ename from emp where rownum<=15 ;
+
+select empno,ename from emp where ename like 'S%';
+
+select ename,sal from emp where sal between 500 and 1000;
+
+select * from emp where sal<1000;
+
+select * from emp where hire_date like '%95';
+
+select * from emp where ename like '_n%';
