@@ -1,0 +1,17 @@
+A compound expression specifies a combination of other expressions. You can use any built-in function as an expression ("Function Expressions"). 
+However, in a compound expression, some combinations of functions are inappropriate and are rejected.
+
+select count(empno),ename from emp GROUP BY JOB;
+
+select ENAME,SUM(SAL) from EMP
+group by ENAME having SAL>4000;
+
+select deptno,ename from emp group by deptno having deptno > 10;
+
+select empno,ename,sal from emp group by deptno;
+
+select ename,empno from emp where sal>10 order by 2;
+
+SELECT ENAME, SUM(SAL) FROM  EMP 
+GROUP BY ENAME having SAL>2000;
+
