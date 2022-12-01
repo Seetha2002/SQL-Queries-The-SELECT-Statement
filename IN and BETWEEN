@@ -1,0 +1,40 @@
+BETWEEN:
+The SQL BETWEEN condition allows you to easily test if an expression is within a range of values (inclusive). The values can be text, date, or numbers. 
+It can be used in a SELECT, INSERT, UPDATE, or DELETE statement. The SQL BETWEEN Condition will return the records where expression is within the range of 
+value1 and value2. 
+
+Syntax: 
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+
+Example:
+select * from emp 
+where sal between 1000 and 2000;
+
+select * from emp
+where ename between 'ALLEN' and 'MILLER';
+
+select ename, empno
+from emp
+where sal
+not between 30000 and 45000;
+
+IN:
+IN operator allows you to easily test if the expression matches any value in the list of values. It is used to remove the need of multiple OR condition in SELECT,
+INSERT, UPDATE or DELETE. You can also use NOT IN to exclude the rows in your list. We should note that any kind of duplicate entry will be retained. 
+
+Syntax:
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (list_of_values);
+
+Example:
+select ename, empno
+from emo
+where sal IN (1000,2000);
+
+select ename, empno
+from emp
+where sal NOT IN (500, 1000);
+
