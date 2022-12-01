@@ -1,0 +1,11 @@
+The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
+
+Syntax:
+SELECT column1, column2, ...
+FROM table_name;
+
+Example:
+select ename, empno, sal from emp where deptno=2;
+select * from emp;
+select distinct deptno from emp;
+select ENAMe ||'id is '||   EMPNO from EMP ;
